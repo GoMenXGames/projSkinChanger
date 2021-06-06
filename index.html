@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RPG - inventory</title>
+    <script src="js/vue.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="empty"></div>
+      <div class="window">
+        <div class="header">
+          <h1 class="window_name">SkinChanger <span class="h1color">v.0.3</span></h1>
+        </div>
+
+        <div class="info">
+
+          <div class="display">
+            <h3 class="nickname">Nickname</h3>
+            <div class="statusbar">
+              <div class="statTitle">
+                Stats:
+              </div>
+              <div class="statArmor">
+                 <img src="images/statusbar/shield.png" alt="Shield">: <span class="statdef">0</span>def
+              </div>
+              <div class="statWeight">
+              <img src="images/statusbar/weight.png" alt="Weight">: <span class="statwght">0</span>kg
+              </div>
+            </div>
+            <div class="armorTitle">
+              Armor:
+            </div>
+            <div class="armor">
+              <div class="helmet">
+                <img src="images/armor/iron/helmet.png" alt="basic">helmet
+              </div>
+              <div class="chestplate">
+                <img src="images/armor/iron/chestplate.png" alt="basic">chestplate
+              </div>
+              <div class="legens">
+                <img src="images/armor/iron/leggings.png" alt="basic">leggens
+              </div>
+              <div class="boots">
+                <img src="images/armor/iron/boots.png" alt="basic">boots
+              </div>
+            </div>
+          </div>
+          <div class="menuTitle">
+            Choose category armor:
+          </div>
+          <div class="menu">
+            <div class="box" onclick="choose(this)">
+              <img src="images/armor/iron/helmet.png" alt="helmet">Helmet's
+            </div>
+            <div class="box" onclick="choose(this)">
+              <img src="images/armor/iron/chestplate.png" alt="chestplate">Chestplate's
+            </div>
+            <div class="box" onclick="choose(this)">
+              <img src="images/armor/iron/leggings.png" alt="leggings">Leggins
+            </div>
+            <div class="box" onclick="choose(this)">
+              <img src="images/armor/iron/boots.png" alt="boots">Boots
+            </div>
+      			<div class="menu_categotry">
+      			</div>
+
+      			<!-- <div class="menu_helmets" style="display: none;">
+      				<div class="box" onclick="choose(this)">
+      				  <img src="images/armor/iron/helmet.png" alt="helmet">Helmet's
+      				</div>
+
+      				<div class="box" onclick="choose(this)" style="display: none;">
+      				  <img src="images/armor/iron/helmet.png" alt="helmet">Helmet's
+      				</div>
+            </div> -->
+        </div>
+        <div class="buttons">
+          <div class="button reset" onclick="reset()">
+            Reset
+          </div>
+          <div class="button save" onclick="save()">
+            Save
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="empty"></div>
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="js/main.js"></script>

@@ -18,7 +18,7 @@ let app = new Vue ({
   },
 }),
 
-console.log('Hello!');
+//console.log('Hello!');
 
 let username = prompt("What is your name adventurer?", 'user');
 alert(`You are welcome ${username} !`);

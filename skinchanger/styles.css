@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  outline: none;
+  font-family: Comfortaa;
+  box-sizing: border-box;
+  font-size: 14px;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: #191919;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: #FFF;
+  padding: 10px;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #0c0c0c;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.75);
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 14px;
+  min-width: 450px;
+  min-height: 520px;
+}
+
+.window_name {text-shadow: 1px 1px gray;}
+
+.h1color {color: green;}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 20%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+
+.nickname {
+  color: silver;
+  border-bottom: 2px solid white;
+  border-radius: 5px;
+  padding: 0px 3px;
+  background-color: #AAA;
+  box-shadow: inset 0 0 5px 3px #111;
+  padding: 3px;
+  text-shadow: 0 0 4px black;
+}
+
+.statusbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1px;
+}
+
+.statTitle {display: flex;}
+
+.statArmor {
+  display: flex;
+  padding: 0 0 5px 0;
+}
+
+.statArmor img {height: 18px;}
+
+.statWeight {
+  display: flex;
+}
+
+.statWeight img {height: 18px;}
+
+.armor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.armor div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 4px;
+  height: 60px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+
+.armor div img {width: 25px;}
+
+.menuTitle {
+  display: flex;
+  align-items: center;
+}
+
+.menuTitle img {
+	display: flex;
+	height: 25px;
+}
+
+.menu {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 4px;
+  height: 40px;
+  min-width: 100px;
+  margin: 4px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  border: 1px solid silver;
+  border-radius: 4px;
+  background-color: #151515;
+}
+
+.box:active {
+  border: 2px solid silver;
+  border-radius: 4px;
+  color: gray;
+  background-color: #252525;
+}
+
+.box img {width: 25px;}
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: silver;
+  border: 2px solid white;
+  border-bottom: none;
+  border-radius: 5px;
+  padding: 0px 3px 3px 3px;
+  width: 100%;
+  margin: 10px 10px 0 10px;
+}
+
+
+.button {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 4px;
+  height: 30px;
+  width: 90px;
+  margin: 4px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 1px 0;
+  font-weight: bold;
+}
+
+.button:hover {background-color: #151515;}
+
+.button.reset:active {
+  border: 2px solid silver;
+  border-radius: 4px;
+  color: darkred;
+  background-color: #252525;
+}
+
+.button.save:active {
+  border: 2px solid silver;
+  border-radius: 4px;
+  color: darkgreen;
+  background-color: #252525;
+}
